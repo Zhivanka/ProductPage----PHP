@@ -1,0 +1,46 @@
+Error: Can not get the product list :.PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'skuu' in 'field list' in C:\xampp\htdocs\ScandiwebProject\Database\Database.php:63
+Stack trace:
+#0 [internal function]: PDO->prepare('SELECT skuu, na...')
+#1 C:\xampp\htdocs\ScandiwebProject\Database\Database.php(63): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\ScandiwebProject\Database\ProductRepository.php(38): Database\Database->__call('prepare', Array)
+#3 C:\xampp\htdocs\ScandiwebProject\Controller\ProductController.php(27): Database\ProductRepository->getProducts()
+#4 C:\xampp\htdocs\ScandiwebProject\Core\Router.php(56): Controller\ProductController->index()
+#5 C:\xampp\htdocs\ScandiwebProject\index.php(34): Core\Router->handle()
+#6 {main}.
+Error: Can not get the product list :.PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'skuu' in 'field list' in C:\xampp\htdocs\ScandiwebProject\Database\Database.php:63
+Stack trace:
+#0 [internal function]: PDO->prepare('SELECT skuu, na...')
+#1 C:\xampp\htdocs\ScandiwebProject\Database\Database.php(63): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\ScandiwebProject\Database\ProductRepository.php(38): Database\Database->__call('prepare', Array)
+#3 C:\xampp\htdocs\ScandiwebProject\Controller\ProductController.php(27): Database\ProductRepository->getProducts()
+#4 C:\xampp\htdocs\ScandiwebProject\Core\Router.php(56): Controller\ProductController->index()
+#5 C:\xampp\htdocs\ScandiwebProject\index.php(34): Core\Router->handle()
+#6 {main}.
+Error: Can not get the product list :.PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'namej' in 'field list' in C:\xampp\htdocs\ScandiwebProject\Database\Database.php:63
+Stack trace:
+#0 [internal function]: PDO->prepare('SELECT sku, nam...')
+#1 C:\xampp\htdocs\ScandiwebProject\Database\Database.php(63): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\ScandiwebProject\Database\ProductRepository.php(41): Database\Database->__call('prepare', Array)
+#3 C:\xampp\htdocs\ScandiwebProject\Controller\ProductController.php(27): Database\ProductRepository->getProducts()
+#4 C:\xampp\htdocs\ScandiwebProject\Core\Router.php(56): Controller\ProductController->index()
+#5 C:\xampp\htdocs\ScandiwebProject\index.php(36): Core\Router->handle()
+#6 {main}.
+Error: Can not get the product list :.PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pricee' in 'field list' in C:\xampp\htdocs\ScandiwebProject\Database\Database.php:63
+Stack trace:
+#0 [internal function]: PDO->prepare('INSERT INTO pro...')
+#1 C:\xampp\htdocs\ScandiwebProject\Database\Database.php(63): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\ScandiwebProject\Database\ProductRepository.php(122): Database\Database->__call('prepare', Array)
+#3 C:\xampp\htdocs\ScandiwebProject\Controller\ProductController.php(54): Database\ProductRepository->save(Object(Model\Dvd))
+#4 C:\xampp\htdocs\ScandiwebProject\Core\Router.php(53): Controller\ProductController->create(Array)
+#5 C:\xampp\htdocs\ScandiwebProject\index.php(36): Core\Router->handle()
+#6 {main}.
+SKU ALREADY EXSIST!!
+Error: Can not get the product list :.PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'skuja' in 'field list' in C:\xampp\htdocs\ScandiwebProject\Database\Database.php:64
+Stack trace:
+#0 [internal function]: PDO->prepare('SELECT skuja, n...')
+#1 C:\xampp\htdocs\ScandiwebProject\Database\Database.php(64): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\ScandiwebProject\Database\ProductRepository.php(43): Database\Database->__call('prepare', Array)
+#3 C:\xampp\htdocs\ScandiwebProject\Controller\ProductController.php(25): Database\ProductRepository->getProducts()
+#4 C:\xampp\htdocs\ScandiwebProject\Core\Router.php(60): Controller\ProductController->index()
+#5 C:\xampp\htdocs\ScandiwebProject\index.php(36): Core\Router->handle()
+#6 {main}.

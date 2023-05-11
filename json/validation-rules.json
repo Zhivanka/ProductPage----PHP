@@ -1,0 +1,38 @@
+{
+    "sku": {
+      "required": true,
+      "pattern": "#^[a-zA-Z0-9-]+$#"
+    },
+    "name": {
+      "pattern": "#^[A-Za-z0-9-]+([ '-][A-Za-z0-9-]+)*$#",
+      "required": true
+    },
+    "price": {
+      "required": true,
+      "pattern": "#^\\d+(\\.\\d+)?$#"
+    },
+    "productType": {
+      "required": true
+    },
+    "size": {
+      "required": true,
+      "pattern": "#^\\d+(\\.\\d+)?$#"
+    },
+    "weight": {
+      "required": true,
+      "pattern": "#^\\d+(\\.\\d+)?$#"
+    },
+    "height": {
+      "required": true,
+      "pattern": "#^\\d+(\\.\\d+)?$#"
+    },
+    "width": {
+      "required": true,
+      "pattern": "#^\\d+(\\.\\d+)?$#"
+    },
+    "length": {
+      "required": true,
+      "pattern": "#^\\d+(\\.\\d+)?$#"
+    }
+  }
+  

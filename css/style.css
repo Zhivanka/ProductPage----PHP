@@ -1,0 +1,16 @@
+#DVD {
+    display: none;
+  }
+
+  #Book {
+    display: none;
+  }
+
+  #Furniture {
+    display: none;
+  }
+
+  .error {
+     color:red;
+
+  }
