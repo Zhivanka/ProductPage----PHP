@@ -1,8 +1,8 @@
 {
-    "name": "gligor/scandiweb-project",
+    "name": "zhivanka/scandiweb-project",
     "autoload": {
         "psr-4": {
-            "Gligor\\ScandiwebProject\\": "src/"
+            "Zhivanka\\ScandiwebProject\\": "src/"
         }
     },
     "authors": [
