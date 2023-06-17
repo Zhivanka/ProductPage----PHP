@@ -17,7 +17,7 @@ class Router
         $this->request = $request;
         $this->logger = $logger;
     }
-    
+
     public function addRoute(string $method, string $path, $controller, string $controllerMethod): void
     {
         $this->routes[] = [
@@ -43,7 +43,7 @@ class Router
                 ViewCreator::render('View/exceptions/internal-error.php', []);
                 exit;
             }
-            
+
             if($controllerMethod=='create') {
                 $input = $this->request->getParam();
                 $controller->$controllerMethod($input);
@@ -55,15 +55,7 @@ class Router
         }
 
         $this->logger->log('Page not found!'.$this->request->getPath());
-        ViewCreator::render('View/exceptions/page-not-found.php',[]);
+        ViewCreator::render('View/exceptions/page-not-found.php', []);
         exit;
     }
 }
-
-
-
-
-
-
-
-    

@@ -1,0 +1,23 @@
+{
+    "name": "gligor/scandiweb-project",
+    "autoload": {
+        "psr-4": {
+            "Gligor\\ScandiwebProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zhivanka",
+            "email": "zivanka.miteva@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.17"
+    },
+
+    "scripts": {
+        "cs-fix": [
+            "vendor/bin/php-cs-fixer fix"
+        ]
+    }
+}

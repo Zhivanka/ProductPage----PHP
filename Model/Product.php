@@ -1,66 +1,67 @@
-<?php 
+<?php
+
 
 declare(strict_types=1);
 
 namespace Model;
 
-abstract class Product 
+abstract class Product
 {
-  protected string $id;
-  protected string $name;
-  protected string $sku;
-  protected float $price;
-  protected string $productType;
-  
-  public function __construct(string $name, string $sku, float $price, string $productType) 
-  {
-    $this->name = $name;
-    $this->sku = $sku;
-    $this->price = $price;
-    $this->productType = $productType;
-  }
+    protected string $id;
+    protected string $name;
+    protected string $sku;
+    protected float $price;
+    protected string $productType;
 
-  public function getName(): string
-  {
-    return $this->name;
-  }
+    public function __construct(string $name, string $sku, float $price, string $productType)
+    {
+        $this->name = $name;
+        $this->sku = $sku;
+        $this->price = $price;
+        $this->productType = $productType;
+    }
 
-  public function getSku(): string 
-  {
-    return $this->sku;
-  }
+    public function getName(): string
+    {
+        return $this->name;
+    }
 
-  
-  public function getPrice(): float
-  {
-    return $this->price;
-  }
+    public function getSku(): string
+    {
+        return $this->sku;
+    }
 
-  public function getType(): string
-  {
-    return $this->productType;
-  }
 
-  public function setName(string $name): void
-  {
-    $this->name = $name;
-  }
+    public function getPrice(): float
+    {
+        return $this->price;
+    }
 
-  public function setSku(string $sku): void
-  {
-    $this->sku = $sku;
-  }
+    public function getType(): string
+    {
+        return $this->productType;
+    }
 
-  public function setPrice(float $price): void
-  {
-    $this->price = $price;
-  }
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
 
-  public function setType(string $type): void
-  {
-    $this->productType = $type;
-  }
+    public function setSku(string $sku): void
+    {
+        $this->sku = $sku;
+    }
 
-  abstract public function getDimension(): string;
-  abstract public function getTableFields(): array;
+    public function setPrice(float $price): void
+    {
+        $this->price = $price;
+    }
+
+    public function setType(string $type): void
+    {
+        $this->productType = $type;
+    }
+
+    abstract public function getDimension(): string;
+    abstract public function getTableFields(): array;
 }

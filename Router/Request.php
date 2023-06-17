@@ -31,10 +31,10 @@ class Request
     {
         $parametars = [];
         foreach ($this->params as $key => $value) {
-         $filteredValue = filter_input(INPUT_POST, $key, FILTER_SANITIZE_STRING);
-         if (isset($filteredValue)) {
-            $parametars[$key] = $filteredValue;
-        }
+            $filteredValue = filter_input(INPUT_POST, $key, FILTER_SANITIZE_STRING);
+            if (isset($filteredValue)) {
+                $parametars[$key] = $filteredValue;
+            }
         }
         return $parametars;
     }

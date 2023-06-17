@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Core;
 
-class ViewCreator 
+class ViewCreator
 {
-    public static function render($viewFile, $variables) 
+    public static function render($viewFile, $variables)
     {
         extract($variables);
         if (file_exists($viewFile)) {

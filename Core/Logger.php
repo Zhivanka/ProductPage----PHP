@@ -24,4 +24,3 @@ class Logger
         fclose($fp);
     }
 }
-
